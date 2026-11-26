@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prakash Steelage - Stainless Steel Pipes, Tubes and Industrial Manufacturing Solutions.">
+<title>Prakash Steel age | Stainless Steel Manufacturers</title>
+
+<style>
+:root{
+ --red:#a51f2b;
+ --dark:#172635;
+ --gold:#c99a45;
+ --light:#f5f6f7;
+ --text:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:86%;max-width:1250px;margin:auto}
+
+/* TOP BAR */
+.topbar{background:var(--dark);color:#fff;padding:9px 0;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar a:hover{color:var(--gold)}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 12px #0001}
+.navbar{height:85px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;color:var(--red);line-height:1.1}
+.logo span{color:var(--dark)}
+.logo small{display:block;font-size:9px;letter-spacing:3px;color:#777;margin-top:5px}
+nav{display:flex;align-items:center;gap:25px}
+nav a{font-size:13px;font-weight:700;color:#333}
+nav a:hover{color:var(--red)}
+.menu-btn{display:none;border:0;background:var(--red);color:#fff;padding:10px 14px;font-size:20px;cursor:pointer}
+
+/* HERO */
+.hero{
+ min-height:650px;
+ background:linear-gradient(90deg,#101b29ed 0%,#101b2980 65%,#101b2930),
+ url('https://images.unsplash.com/photo-1567789884554-0b844b597180?w=1800') center/cover;
+ display:flex;align-items:center;color:#fff;
+}
+.hero-content{max-width:750px}
+.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:3px;font-size:13px;margin-bottom:18px}
+.hero h1{font-size:58px;line-height:1.13;margin-bottom:24px}
+.hero p{font-size:18px;color:#eee;max-width:650px;margin-bottom:32px}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:14px 29px;font-weight:bold;font-size:13px;letter-spacing:1px;border:0;cursor:pointer;transition:.3s}
+.btn:hover{background:#74151e;transform:translateY(-3px)}
+.btn-outline{background:transparent;border:1px solid #fff;margin-left:12px}
+.btn-outline:hover{background:#fff;color:var(--dark)}
+
+/* COMMON */
+section{padding:90px 0}
+.section-heading{text-align:center;max-width:700px;margin:0 auto 48px}
+.section-heading .eyebrow{color:var(--red)}
+.section-heading h2{font-size:37px;color:var(--dark);line-height:1.2}
+.section-heading p{color:#777;margin-top:14px}
+.line{width:65px;height:3px;background:var(--gold);margin:18px auto}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-image{position:relative}
+.about-image img{width:100%;height:440px;object-fit:cover}
+.experience{position:absolute;right:-20px;bottom:25px;background:var(--red);color:white;padding:24px;text-align:center}
+.experience strong{display:block;font-size:35px}
+.about-content .eyebrow{color:var(--red)}
+.about-content h2{font-size:38px;color:var(--dark);line-height:1.2;margin-bottom:22px}
+.about-content p{color:#666;margin-bottom:17px}
+.check-list{list-style:none;margin:20px 0}
+.check-list li{margin:10px 0;color:#444}
+.check-list li:before{content:"✓";color:var(--red);font-weight:bold;margin-right:12px}
+
+/* PRODUCTS */
+.products{background:var(--light)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.product-card{background:#fff;box-shadow:0 5px 25px #0000000d;transition:.3s}
+.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px #0002}
+.product-card img{height:250px;width:100%;object-fit:cover}
+.product-info{padding:25px}
+.product-info h3{font-size:20px;color:var(--dark);margin-bottom:10px}
+.product-info p{font-size:14px;color:#777;margin-bottom:15px}
+.product-info a{font-size:12px;font-weight:bold;color:var(--red)}
+
+/* STATS */
+.stats{background:var(--dark);color:#fff;padding:55px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat h2{font-size:42px;color:var(--gold)}
+.stat p{font-size:14px;color:#ddd}
+
+/* QUALITY */
+.quality-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.quality-card{padding:35px 25px;background:#fff;border:1px solid #eee;text-align:center}
+.quality-icon{font-size:37px;color:var(--red);margin-bottom:15px}
+.quality-card h3{color:var(--dark);margin-bottom:10px}
+.quality-card p{font-size:14px;color:#777}
+
+/* INDUSTRIES */
+.industries{background:var(--light)}
+.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.industry{background:var(--dark);color:white;text-align:center;padding:35px 15px;transition:.3s}
+.industry:hover{background:var(--red);transform:translateY(-5px)}
+.industry span{font-size:32px;display:block;margin-bottom:10px}
+.industry h3{font-size:17px}
+
+/* CTA */
+.cta{background:linear-gradient(90deg,#a51f2bdf,#172635d9),url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1600') center/cover;text-align:center;color:#fff}
+.cta h2{font-size:38px;margin-bottom:15px}
+.cta p{margin-bottom:25px;color:#eee}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}
+.contact-info{background:var(--dark);padding:38px;color:#fff}
+.contact-info h2{font-size:27px;margin-bottom:25px}
+.contact-item{margin:22px 0}
+.contact-item strong{display:block;color:var(--gold);font-size:13px}
+.contact-item a{overflow-wrap:anywhere}
+.contact-item a:hover{color:var(--gold)}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:15px;border:1px solid #ddd;font:inherit;outline:none}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--red)}
+.contact-form textarea{grid-column:1/-1;height:140px;resize:vertical}
+.contact-form button{grid-column:1/-1;justify-self:start}
+.form-note{grid-column:1/-1;color:#777;font-size:12px}
+
+/* FOOTER */
+footer{background:#101923;color:#bbb;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:35px}
+footer h3{color:#fff;margin-bottom:18px}
+footer p{font-size:14px;margin:8px 0}
+footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #ffffff22;padding-top:20px;text-align:center;font-size:13px}
+.back-top{position:fixed;right:20px;bottom:20px;background:var(--red);color:#fff;padding:12px 16px;z-index:20}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+ .container{width:90%}
+ .navbar{height:auto;min-height:75px;flex-wrap:wrap}
+ .menu-btn{display:block}
+ nav{display:none;width:100%;flex-direction:column;align-items:flex-start;padding:15px 0 22px;gap:15px}
+ nav.active{display:flex}
+ .hero h1{font-size:46px}
+ .about-grid{gap:35px}
+ .product-grid{grid-template-columns:repeat(2,1fr)}
+ .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ section{padding:65px 0}
+ .topbar .container{justify-content:center;text-align:center}
+ .hero{min-height:530px}
+ .hero h1{font-size:37px}
+ .hero p{font-size:15px}
+ .btn{padding:13px 19px}
+ .btn-outline{margin:12px 0 0}
+ .about-grid{grid-template-columns:1fr}
+ .about-image img{height:300px}
+ .experience{right:0}
+ .about-content h2{font-size:30px}
+ .section-heading h2{font-size:29px}
+ .product-grid,.quality-grid,.industry-grid{grid-template-columns:1fr}
+ .stats-grid{grid-template-columns:1fr 1fr}
+ .stat h2{font-size:33px}
+ .cta h2{font-size:29px}
+ .contact-form{grid-template-columns:1fr}
+ .contact-form textarea,.contact-form button,.form-note{grid-column:1}
+ .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+ <div class="container">
+  <span>Stainless Steel Manufacturing & Industrial Solutions</span>
+  <span>
+   <a href="mailto:chaitanya30days@gmail.com">chaitanya30days@gmail.com</a>
+   &nbsp; | &nbsp;
+   <a href="tel:+13658970891">+1 (365) 897-0891</a>
+  </span>
+ </div>
+</div>
+
+<!-- HEADER -->
+<header>
+ <div class="container navbar">
+  <a class="logo" href="#home">
+   PRAKASH <span>STEELAGE</span>
+   <small>STAINLESS STEEL SOLUTIONS</small>
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+  <nav id="navMenu">
+   <a href="#home">HOME</a>
+   <a href="#about">ABOUT US</a>
+   <a href="#products">PRODUCTS</a>
+   <a href="#quality">QUALITY</a>
+   <a href="#industries">INDUSTRIES</a>
+   <a href="#contact">CONTACT</a>
+  </nav>
+ </div>
+</header>
+
+<!-- HERO -->
+<main>
+<div class="hero" id="home">
+ <div class="container">
+  <div class="hero-content">
+   <div class="eyebrow">ENGINEERING EXCELLENCE</div>
+   <h1>Strength, Quality & Precision in Stainless Steel</h1>
+   <p>
+    Discover stainless steel pipes, tubes and industrial solutions
+    designed for performance, reliability and quality.
+   </p>
+   <a href="#products" class="btn">EXPLORE PRODUCTS</a>
+   <a href="#contact" class="btn btn-outline">CONTACT US</a>
+  </div>
+ </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+ <div class="container about-grid">
+  <div class="about-image">
+   <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=1000" alt="Steel manufacturing facility">
+   <div class="experience">
+    <strong>SS</strong>
+    <span>Steel Solutions</span>
+   </div>
+  </div>
+
+  <div class="about-content">
+   <div class="eyebrow">ABOUT OUR COMPANY</div>
+   <h2>Welcome to Prakash Steelage</h2>
+   <p>
+    Prakash Steelage is presented here as a stainless steel
+    manufacturing and industrial solutions brand.
+   </p>
+   <p>
+    We focus on engineering quality, precision manufacturing,
+    product reliability and customer satisfaction.
+   </p>
+   <ul class="check-list">
+    <li>Stainless steel product solutions</li>
+    <li>Focus on quality and precision</li>
+    <li>Industrial application support</li>
+    <li>Customer-focused service</li>
+   </ul>
+   <a href="#contact" class="btn">GET IN TOUCH</a>
+  </div>
+ </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">OUR PRODUCTS</div>
+   <h2>Stainless Steel Product Range</h2>
+   <div class="line"></div>
+   <p>Explore our product categories for industrial applications.</p>
+  </div>
+
+  <div class="product-grid">
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800" alt="Steel pipes">
+    <div class="product-info">
+     <h3>Stainless Steel Pipes</h3>
+     <p>Stainless steel pipes for a variety of industrial applications.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800" alt="Steel tubes">
+    <div class="product-info">
+     <h3>Stainless Steel Tubes</h3>
+     <p>Engineered tubes for strength, durability and performance.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800" alt="Industrial equipment">
+    <div class="product-info">
+     <h3>Industrial Products</h3>
+     <p>Steel products for demanding industrial environments.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800" alt="Steel engineering">
+    <div class="product-info">
+     <h3>Precision Engineering</h3>
+     <p>Precision-focused manufacturing and engineering solutions.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800" alt="Metal fabrication">
+    <div class="product-info">
+     <h3>Custom Solutions</h3>
+     <p>Discuss your specific stainless steel requirements with our team.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+
+   <article class="product-card">
+    <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800" alt="Steel production">
+    <div class="product-info">
+     <h3>Manufacturing Solutions</h3>
+     <p>Industrial manufacturing solutions with quality as a priority.</p>
+     <a href="#contact">ENQUIRE NOW →</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- COMPANY HIGHLIGHTS -->
+<section class="stats">
+ <div class="container stats-grid">
+  <div class="stat"><h2>SS</h2><p>Steel Specialization</p></div>
+  <div class="stat"><h2>QC</h2><p>Quality Focus</p></div>
+  <div class="stat"><h2>24/7</h2><p>Enquiry Access</p></div>
+  <div class="stat"><h2>100%</h2><p>Customer Commitment</p></div>
+ </div>
+</section>
+
+<!-- QUALITY -->
+<section id="quality">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">OUR COMMITMENT</div>
+   <h2>Quality & Excellence</h2>
+   <div class="line"></div>
+   <p>Our approach is built around reliable products and professional service.</p>
+  </div>
+
+  <div class="quality-grid">
+   <div class="quality-card">
+    <div class="quality-icon">◆</div>
+    <h3>Quality Focus</h3>
+    <p>Attention to quality and consistency across product requirements.</p>
+   </div>
+   <div class="quality-card">
+    <div class="quality-icon">⚙</div>
+    <h3>Engineering</h3>
+    <p>Engineering-focused solutions for diverse industrial applications.</p>
+   </div>
+   <div class="quality-card">
+    <div class="quality-icon">✓</div>
+    <h3>Customer Support</h3>
+    <p>Clear communication and responsive enquiry assistance.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">APPLICATION AREAS</div>
+   <h2>Industries We Serve</h2>
+   <div class="line"></div>
+   <p>Stainless steel applications across different sectors.</p>
+  </div>
+
+  <div class="industry-grid">
+   <div class="industry"><span>⚙</span><h3>Oil & Gas</h3></div>
+   <div class="industry"><span>♧</span><h3>Chemical Industry</h3></div>
+   <div class="industry"><span>✚</span><h3>Pharmaceutical</h3></div>
+   <div class="industry"><span>⚡</span><h3>Power Plants</h3></div>
+   <div class="industry"><span>◈</span><h3>Food Processing</h3></div>
+   <div class="industry"><span>▦</span><h3>Engineering</h3></div>
+  </div>
+ </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+ <div class="container">
+  <h2>Looking for Stainless Steel Solutions?</h2>
+  <p>Contact Prakash Steelage to discuss your product requirements.</p>
+  <a href="#contact" class="btn">SEND AN ENQUIRY</a>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">CONTACT US</div>
+   <h2>Let's Start a Conversation</h2>
+   <div class="line"></div>
+   <p>Reach out to us for product enquiries and business communication.</p>
+  </div>
+
+  <div class="contact-grid">
+   <div class="contact-info">
+    <h2>Get In Touch</h2>
+
+    <div class="contact-item">
+     <strong>COMPANY</strong>
+     <p>Prakash Steelage</p>
+    </div>
+
+    <div class="contact-item">
+     <strong>EMAIL ADDRESS</strong>
+     <p><a href="mailto:chaitanya30days@gmail.com">chaitanya30days@gmail.com</a></p>
+    </div>
+
+    <div class="contact-item">
+     <strong>PHONE NUMBER</strong>
+     <p><a href="tel:+13658970891">+1 (365) 897-0891</a></p>
+    </div>
+
+    <div class="contact-item">
+     <strong>ENQUIRIES</strong>
+     <p>Product information and business enquiries are welcome.</p>
+    </div>
+   </div>
+
+   <form class="contact-form" id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <select id="subject" required>
+     <option value="">Select Enquiry Type</option>
+     <option>Product Enquiry</option>
+     <option>Business Enquiry</option>
+     <option>General Enquiry</option>
+    </select>
+    <textarea id="message" placeholder="Write Your Message..." required></textarea>
+    <p class="form-note">Submitting opens your email application with your enquiry prepared.</p>
+    <button type="submit" class="btn">SEND MESSAGE →</button>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <h3>PRAKASH STEELAGE</h3>
+    <p>Stainless Steel Manufacturing & Industrial Solutions.</p>
+    <p>Quality, engineering and customer-focused service.</p>
+   </div>
+
+   <div>
+    <h3>QUICK LINKS</h3>
+    <p><a href="#home">Home</a></p>
+    <p><a href="#about">About Us</a></p>
+    <p><a href="#products">Products</a></p>
+    <p><a href="#industries">Industries</a></p>
+   </div>
+
+   <div>
+    <h3>CONTACT DETAILS</h3>
+    <p><a href="mailto:chaitanya30days@gmail.com">chaitanya30days@gmail.com</a></p>
+    <p><a href="tel:+13658970891">+1 (365) 897-0891</a></p>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+   © 2026 Prakash Steelage. All Rights Reserved.
+  </div>
+ </div>
+</footer>
+
+<a class="back-top" href="#home" aria-label="Back to top">↑</a>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", function(){
+ navMenu.classList.toggle("active");
+ menuBtn.textContent =
+ navMenu.classList.contains("active") ? "✕" : "☰";
+});
+
+document.querySelectorAll("#navMenu a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navMenu.classList.remove("active");
+  menuBtn.textContent="☰";
+ });
+});
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+ e.preventDefault();
+
+ const name=document.getElementById("name").value.trim();
+ const email=document.getElementById("email").value.trim();
+ const phone=document.getElementById("phone").value.trim();
+ const subject=document.getElementById("subject").value;
+ const message=document.getElementById("message").value.trim();
+
+ const body=
+ "Name: "+name+"\n"+
+ "Email: "+email+"\n"+
+ "Phone: "+phone+"\n"+
+ "Enquiry: "+subject+"\n\n"+
+ "Message:\n"+message;
+
+ const mailto=
+ "mailto:chaitanya30days@gmail.com"+
+ "?subject="+encodeURIComponent("Website Enquiry - "+subject)+
+ "&body="+encodeURIComponent(body);
+
+ window.location.href=mailto;
+});
+</script>
+
+</body>
+</html>
